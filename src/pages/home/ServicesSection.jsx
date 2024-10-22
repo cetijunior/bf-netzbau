@@ -20,7 +20,7 @@ function ServicesSection() {
     return (
         <section id='services'>
             <AnimatedSection>
-                <div className="container px-4 mx-auto py-16">
+                <div className="container mt-32 px-4 mx-auto py-16">
                     <h2 className="text-4xl font-bold text-center mb-12 text-red-500 z-10">
                         Our Services
                     </h2>

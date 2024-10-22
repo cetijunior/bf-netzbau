@@ -9,7 +9,7 @@ function HeroSection() {
             <div className="relative sm:mb-0 -mb-60 h-screen">
                 {/* Video Background */}
                 <video
-                    className="absolute inset-0 rounded-b-full shadow-2xl shadow-red w-full h-1/3 sm:h-screen object-cover"
+                    className="absolute inset-0 rounded-b-full sm:top-20 top-0 shadow-2xl shadow-red w-full h-1/3 sm:h-screen object-cover"
                     src="/assets/videos/hero-video.mp4"
                     autoPlay
                     loop
@@ -24,7 +24,7 @@ function HeroSection() {
 
                     {/* Left Text (Glasfaser) */}
                     <motion.div
-                        className="flex flex-col items-center justify-center px-8 text-center lg:text-right sm:mb-0"
+                        className="flex flex-col items-center sm:mt-0 mt-24 justify-center px-8 text-center lg:text-right sm:mb-0"
                         initial={{ opacity: 0, x: -100 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 2 }}
