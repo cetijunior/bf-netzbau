@@ -81,7 +81,7 @@ function Footer() {
 
                 {/* Social Icons Section */}
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-                    <h3 className="text-3xl font-bold mb-4">Follow Us</h3>
+                    <h3 className="text-3xl font-bold sm:mt-0 mt-10 mb-4">Follow Us</h3>
                     <div className="flex space-x-6 justify-center lg:justify-start">
                         <a
                             href="https://facebook.com"

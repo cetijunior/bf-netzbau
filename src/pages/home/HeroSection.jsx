@@ -14,6 +14,7 @@ function HeroSection() {
                     autoPlay
                     loop
                     muted
+                    playsInline
                 />
                 {/* Overlay */}
 

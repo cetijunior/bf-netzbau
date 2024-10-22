@@ -9,9 +9,9 @@ const categories = {
         "/assets/images/gallery10.jpg",
 
     ],
-    Garage: [
+    // Garage: [
 
-    ],
+    // ],
 };
 
 function ServicesPage() {
