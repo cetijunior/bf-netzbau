@@ -1,3 +1,149 @@
+/* src/styles/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles */
+body {
+    @apply bg-black text-white font-sans;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff0000, #990000);
+    border-radius: 4px;
+}
+
+
+@keyframes fadeBlur {
+
+    0%,
+    100% {
+        opacity: 0.7;
+        filter: blur(40px);
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(20px);
+    }
+}
+
+.animate-fade-blur {
+    animation: fadeBlur 8s infinite;
+}
+
+
+/* src/styles/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar styling (optional) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+    /* Red color */
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+/* Modern fiber optic snake-like movement */
+.fiber-bg {
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Fiber strand starting from the top */
+.fiber-strand {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 8px;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.7), transparent);
+    transform-origin: center;
+    opacity: 0.4;
+    filter: blur(3px);
+    animation: snake-move 14s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+.fiber-strand:nth-child(2) {
+    animation-duration: 12s;
+    animation-delay: -3s;
+    transform: rotate(25deg);
+}
+
+.fiber-strand:nth-child(3) {
+    animation-duration: 16s;
+    animation-delay: -5s;
+    transform: rotate(-50deg);
+}
+
+.fiber-strand:nth-child(4) {
+    animation-duration: 20s;
+    animation-delay: -4s;
+    transform: rotate(40deg);
+}
+
+.fiber-strand:nth-child(5) {
+    animation-duration: 18s;
+    animation-delay: -6s;
+    transform: rotate(-70deg);
+}
+
+/* Randomized snake-like movement */
+@keyframes snake-move {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0.8;
+    }
+
+    15% {
+        transform: translateY(20vh) translateX(15vw) rotate(25deg);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateY(40vh) translateX(-20vw) rotate(80deg);
+        opacity: 0.9;
+    }
+
+    45% {
+        transform: translateY(60vh) translateX(25vw) rotate(140deg);
+        opacity: 0.7;
+    }
+
+    60% {
+        transform: translateY(70vh) translateX(-30vw) rotate(180deg);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(85vh) translateX(40vw) rotate(220deg);
+        opacity: 0.6;
+    }
+
+    90% {
+        transform: translateY(100vh) translateX(-50vw) rotate(260deg);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(120vh) translateX(0) rotate(300deg);
+        opacity: 0.2;
+    }
+}
